@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <a href="https://wa.me/7999094923" class="whatsapp-btn" target="_blank">
-  💬
+💬
 </a>
 
 <body>
@@ -19,18 +19,20 @@
       <a href="#home">Home</a>
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
+       <a href="#blog">Contact</a>
     </nav>
   </header>
 
   <!-- HERO -->
-  <section class="hero" id="home">
-    <h1>Grow Your Business With <span>Smart Digital Marketing</span></h1>
-    <p>We help brands get leads, sales and growth using ads & strategy.</p>
-    <div class="hero-buttons">
-      <button class="btn-primary">Get Free Consultation</button>
-      <button class="btn-secondary">View Services</button>
-    </div>
-  </section>
+  <section class="hero">
+  <div class="hero-content">
+    <h1>We Grow Your Business With Smart Ads</h1>
+    <p>Facebook • Instagram • Google Ads • Lead Generation</p>
+    <button id="openPopup">Get Free Consultation</button>
+  </div>
+</section>
+
+
 
   <!-- SERVICES -->
   <section class="services" id="services">
@@ -53,11 +55,69 @@
       </div>
     </div>
   </section>
+  <section class="marquee-section">
+  <div class="marquee">
+    <span>Facebook Ads</span>
+    <span>Google Ads</span>
+    <span>Instagram Marketing</span>
+    <span>Lead Generation</span>
+    <span>Brand Growth</span>
+    <span>Performance Marketing</span>
+  </div>
+</section>
+
+
+
+
+  <section class="pricing" id="pricing">
+  <h2>Our Advertising Plans</h2>
+
+  <div class="pricing-grid">
+
+    <div class="plan-card">
+      <h3>Basic</h3>
+      <p class="price">₹5,999 <span>/ month</span></p>
+      <ul>
+        <li>Ad Setup</li>
+        <li>1 Campaign</li>
+        <li>Weekly Report</li>
+      </ul>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+
+    <div class="plan-card popular">
+      <span class="badge">Most Popular</span>
+      <h3>Standard</h3>
+      <p class="price">₹9,999 <span>/ month</span></p>
+      <ul>
+        <li>Everything in Basic</li>
+        <li>Multiple Campaigns</li>
+        <li>Optimization</li>
+      </ul>
+      <a href="#contact" class="btn">Choose Plan</a>
+    </div>
+
+    <div class="plan-card">
+      <h3>Premium</h3>
+      <p class="price">₹14,999 <span>/ month</span></p>
+      <ul>
+        <li>Unlimited Campaigns</li>
+        <li>Funnel Strategy</li>
+        <li>Priority Support</li>
+      </ul>
+      <a href="#contact" class="btn">Scale Now</a>
+    </div>
+
+  </div>
+</section>
+
   <section class="cta">
   <h2>Ready to Grow Your Business?</h2>
   <p>Get a free strategy call and see how we can help you scale.</p>
   <a href="#contact">Book Free Consultation</a>
 </section>
+
+
 
 
   <!-- CONTACT -->
@@ -84,18 +144,23 @@
 
   <div class="testimonial-grid">
     <div class="testimonial">
-      <p>"Amazing results in just 30 days. Highly recommended!"</p>
+      <p>"Amazing results in just 30 days. Highly recommended!⭐⭐⭐⭐⭐"</p>
       <h4>— Local Business Owner</h4>
     </div>
 
     <div class="testimonial">
-      <p>"Our leads doubled after working with this team."</p>
+      <p>"Our leads doubled after working with this team.⭐⭐⭐⭐⭐"</p>
       <h4>— Startup Founder</h4>
     </div>
 
     <div class="testimonial">
-      <p>"Professional, transparent and effective marketing."</p>
+      <p>"Professional, transparent and effective marketing.⭐⭐⭐⭐⭐"</p>
       <h4>— Agency Client</h4>
+    </div>
+
+   <div class="testimonial">
+      <p>"Great Services Must Recommended.⭐⭐⭐⭐⭐"</p>
+      <h4>— Gym owner</h4>
     </div>
   </div>
 </section>
@@ -104,3 +169,30 @@
   <footer>
     © 2026 Vivek Media • Digital Growth Agency
   </footer>
+
+  <div class="popup" id="popup">
+  <div class="popup-box">
+    <span id="closePopup">×</span>
+    <h2>Get Free Growth Plan</h2>
+
+    <form action="https://formspree.io/f/mzdzrjkw" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Phone Number">
+      <button type="submit">Register Now</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  const popup = document.getElementById("popup");
+  const openBtn = document.getElementById("openPopup");
+  const closeBtn = document.getElementById("closePopup");
+
+  setTimeout(() => {
+    popup.style.display = "flex";
+  }, 5000);
+
+  openBtn.onclick = () => popup.style.display = "flex";
+  closeBtn.onclick = () => popup.style.display = "none";
+</script>
