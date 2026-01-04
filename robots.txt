@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://viveksisodiya1.github.io/agency/sitemap.xml
+
