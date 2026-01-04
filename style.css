@@ -1,3 +1,36 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.4rem; }
+p  { font-size: 1rem; }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p, li, a {
+    font-size: 1rem;
+  }
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -430,3 +463,8 @@ footer {
   }
 }
 
+button, .btn, a.cta {
+  padding: 14px 22px;
+  font-size: 1rem;
+  border-radius: 10px;
+}
